@@ -2,6 +2,7 @@
   "name": "ziyi-bot",
   "scripts": {
     "dev": "PADPLUS_REPLAY_MESSAGE=true ts-node initBot.ts",
+    "start": "pm2 start dist/initBot.js -- -PADPLUS_REPLAY_MESSAGE true",
     "tsc": "tsc"
   },
   "eslintConfig": {
